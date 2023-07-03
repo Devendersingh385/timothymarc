@@ -9,6 +9,7 @@ import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Buttons from "@/timo/pages/Components/Buttons/Buttons";
 import LinkButton from "../Buttons/LinkButton";
+import Image from "next/image";
 
 const StoryContent = () => {
   return (
@@ -95,19 +96,29 @@ const StoryContent = () => {
             <Grid item xs={12} lg={6} className="overflow-hidden">
               <Card
                 className="bg-cover bg-no-repeat bg-center overflow-hidden"
-                sx={{
-                  backgroundImage: `url('./story-cover.jpg')`,
-                  minHeight: "535px",
-                  borderRadius: 0,
-                  boxShadow: "unset",
-                  transition: "transform 3s ease,-webkit-transform 3s ease",
-                  "&:hover": {
-                    transform: "scale(1.03)",
-                  },
-                }}
+                  sx={{
+                    padding: '0',
+                    borderRadius: 0,
+                    boxShadow: "unset",
+                    transition: "transform 3s ease,-webkit-transform 3s ease",
+                    "& img": {
+                      transition: "transform 3s ease,-webkit-transform 3s ease",
+                    },
+                    "&:hover img": {
+                      transform: "scale(1.03)",
+                    }                    
+                  }}
               >
+                <Image 
+                   src='/story-cover.jpg' 
+                   alt=''
+                   width={995}
+                   height={105}
+                   className='mx-auto'
+                />
+
                 <CardContent
-                  className="text-center flex items-center flex-col"
+                  className="text-center flex items-center flex-col absolute top-0 bottom-0 left-0 right-0"
                   sx={{ padding: "96px 56px" }}
                 >
                    <Typography
