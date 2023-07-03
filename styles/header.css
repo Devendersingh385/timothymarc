@@ -6,3 +6,14 @@
     background-color: rgba(0,0,0,.9);
     padding: 15px 30px;
 }
+.scrolled .hamburg {
+    margin-left: 10px;
+}
+.scrolled .headerBtn {
+    border-color: #fff;
+    opacity: 1;
+    color: #fff;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9)
+}

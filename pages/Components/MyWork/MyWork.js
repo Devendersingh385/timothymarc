@@ -11,7 +11,7 @@ const MyWork = () => {
       <Box sx={{ flexGrow: 1, background:' #181818', padding: '90px 30px' }} className="text-center">
         <Container maxWidth="">
           <Grid 
-            container spacing={0} display="flex" alignItems="center" justifyContent="center" flexWrap="nowrap">                     
+            container spacing={0} display="flex" alignItems="center" justifyContent="center" flexWrap="nowrap" className='myWork'>                     
               <WorkList />
           </Grid>  
         </Container>

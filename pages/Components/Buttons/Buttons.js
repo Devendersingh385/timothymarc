@@ -8,6 +8,7 @@ const Buttons = ({title}) => {
           <Button 
             size='large' 
             variant="contained" 
+            className='headerBtn'
             sx={{
               backgroundColor: 'transparent',
               border: '2px solid #fff',
@@ -17,6 +18,7 @@ const Buttons = ({title}) => {
               fontWeight: 400,
               minWidth: '160px',
               borderRadius: 0,
+              transition: 'all .4s ease',
               "&:hover": {
                 backgroundColor: '#fff',
                 color: '#000'

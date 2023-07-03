@@ -61,3 +61,78 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     padding: 0 !important;
   }
 }
+
+/* Drawer */
+.sidebarMenu {
+  position: absolute;
+  padding: 100px 10vw 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.sidebarcol ul,
+.sidebarcol2 ul,
+.sidebarcol3 ul {
+  padding: 0px;
+}
+
+.sidebarcol ul li,
+.sidebarcol2 ul li,
+.sidebarcol3 ul li {
+  list-style: none;
+  line-height: 46px;
+}
+
+.sidebarcol ul li a,
+.sidebarcol2 ul li a,
+.sidebarcol3 ul li a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 46px;
+  text-decoration: none;
+  color: rgb(154, 154, 154);
+  transition-duration: 0.4s;
+}
+
+.sidebarcol ul li:hover a,
+.sidebarcol2 ul li:hover a,
+.sidebarcol3 ul li:hover a {
+  color: #719ab4;
+}
+
+.sidebarcol2 h3,
+.sidebarcol3 h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebarcol2 h3 a,
+.sidebarcol3 h3 a {
+    text-decoration: none;
+    color: #719ab4;
+}
+
+.menu-logo {
+  position: absolute;
+  bottom: 50px;
+  left: 10vw;
+}
+
+.sideBar-header {
+  position: absolute;
+  top: 40px;
+  z-index: 999;
+  right: 60px;
+  color: #fff;
+}
+
+
+@media all and (max-width: 767px) {
+  .myWork {
+    flex-direction: column !important;
+  }
+  .myWork .MuiGrid-root {
+    border-right: unset;
+  }
+}

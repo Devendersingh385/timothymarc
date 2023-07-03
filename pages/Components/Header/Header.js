@@ -54,12 +54,10 @@ useEffect(()=>{
                                 </Link>
                                 }  
                             </li>
-                            <li>
+                            <li className='flex align-middle justify-center'>
                                 <Buttons title='Get Started' />
-                            </li>  
-                            <li>
-                                {/* <HamburgeMenu /> */}
-                            </li>                           
+                                <HamburgeMenu  />
+                            </li>                    
                         </ul> 
                     </Grid>                                       
                 </Grid>

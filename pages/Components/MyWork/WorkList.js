@@ -47,7 +47,7 @@ const WorkList = () => {
   return (
     <>
       {itemData.map((item) => (
-        <Grid item xs={12} display="flex" alignItems="center" justifyContent="center" 
+        <Grid item xs={12} display="flex" alignItems="center" justifyContent="center"
         sx={{ 
           padding: '30px 75px 50px',
           borderRight: '1px solid #4f4f4f',
