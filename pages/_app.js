@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import '@/styles/header.css';
 // import '@fontsource-variable/open-sans';
 import '@fontsource/open-sans';
 import Header from './Components/Header/Header';
